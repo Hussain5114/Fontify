@@ -41,15 +41,18 @@
         </script>
         <style>
             .notification {
-                position: fixed;
-                top: 180px;
-                right: 20px;
-                background: linear-gradient(90deg, #f3a7e3 0%, #6d2323 100%);
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
 
-                color: white;
-                padding: 10px;
-                border-radius: 5px;
-            }
 
             /* .notification::before {
                 content: "";
@@ -71,70 +74,78 @@
             } */
 
             .btn {
-                display: inline-block;
-                background: linear-gradient(90deg, #f3a7e3 0%, #6d2323 100%);
-                color: #fff;
-                padding: 10px 30px;
-                border: none;
-                border-radius: 30px;
-                font-size: 18px;
-                transition: all 0.2s ease-in-out;
-            }
+    display: inline-block;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: #fff;
+    padding: 12px 40px;
+    border: 2px solid #ff7e5f;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
 
-            .btn:hover {
-                transform: scale(1.1);
-                background: linear-gradient(90deg, #f3a7e3 0%, #6d2323 100%);
-            }
+.btn:hover {
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+    border-color: #feb47b;
+    transform: scale(1.05);
+}
 
-            .loadmore {
-                animation: pulse 1s infinite;
-            }
+.btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Adjusted gradient colors */
+}
 
-            @keyframes pulse {
-                0% {
-                    transform: scale(1);
-                }
+.loadmore {
+    animation: pulse 1s infinite;
+}
 
-                50% {
-                    transform: scale(1.2);
-                }
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
 
-                100% {
-                    transform: scale(1);
-                }
-            }
+    50% {
+        transform: scale(1.2);
+    }
 
-            .form-control {
-                border: 1px solid #0067e5;
-            }
+    100% {
+        transform: scale(1);
+    }
+}
 
-            .input-group-text {
-                background: linear-gradient(90deg, #f3a7e3 0%, #6d2323 100%);
-                border-radius: 0px;
-                color: white;
-            }
+.form-control {
+    border: 2px solid #0067e5; /* Increased border thickness for better visibility */
+}
 
-            /* .table-dark td,
-            .table-dark th,
-            .table-dark thead th {
-                border-color: #16fff3;
-            } */
-            .bg-warning {
-                background: linear-gradient(90deg, #f3a7e3 0%, #6d2323 100%);
-            }
+.input-group-text {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Adjusted gradient colors */
+    border-radius: 10px; /* Rounded corners */
+    color: white;
+}
 
-            .navbar-light .navbar-nav .nav-link {
-                color: white;
-            }
-            .navbar-light .navbar-brand {
-                color: white;
-            }
-            .navbar-light .navbar-nav .nav-link.active {
-                color: white;
-            }
-            a {
-                text-decoration: none;
-            }
+.bg-warning {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b); /* Adjusted gradient colors */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333; /* Changed text color for better contrast */
+}
+
+.navbar-light .navbar-brand {
+    color: #333; /* Changed text color for better contrast */
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #333; /* Changed text color for better contrast */
+}
+
+a {
+    text-decoration: none;
+}
+
         </style>
     </head>
     <body>
